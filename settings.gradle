@@ -1,0 +1,9 @@
+rootProject.name = 'msa-delivery'
+
+include ':api'
+project(':api').projectDir = file('api')
+
+include ':util'
+project(':util').projectDir = file('util')
+
+include ':microservices:order-service'
