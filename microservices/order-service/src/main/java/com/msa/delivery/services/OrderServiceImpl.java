@@ -26,11 +26,11 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order getOrder(int orderId) {
-        LOG.debug("/product return the found product for productId={}", orderId);
+        LOG.debug("/order return the found order for orderId={}", orderId);
 
-        if (orderId < 1) throw new InvalidInputException("Invalid productId: " + orderId);
+        if (orderId < 1) throw new InvalidInputException("Invalid orderId: " + orderId);
 
-        if (orderId == 13) throw new NotFoundException("No product found for productId: " + orderId);
+        if (orderId == 13) throw new NotFoundException("No order found for orderId: " + orderId);
 
         return new Order(orderId, "name-" + orderId);
     }
