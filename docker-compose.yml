@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  order-service:
+    build: microservices/order-service
+    mem_limit: 350m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+  customer-service:
+    build: microservices/customer-service
+    mem_limit: 350m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+  kitchen-service:
+    build: microservices/kitchen-service
+    mem_limit: 350m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+  restaurant-service:
+    build: microservices/restaurant-service
+    mem_limit: 350m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+  rider-service:
+    build: microservices/rider-service
+    mem_limit: 350m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+  ticket-service:
+    build: microservices/ticket-service
+    mem_limit: 350m
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
