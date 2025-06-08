@@ -1,0 +1,65 @@
+spring:
+  application:
+    name: ConfigServer
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:delivery-msa/config-repository.git
+          ignore-local-ssh-settings: true
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+
+server:
+  port: 9000
