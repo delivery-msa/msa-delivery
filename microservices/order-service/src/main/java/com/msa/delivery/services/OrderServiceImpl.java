@@ -25,13 +25,13 @@ public class OrderServiceImpl implements OrderService {
   ;  }
 
     @Override
-    public Order getOrder(int orderId) {
+    public Mono<Order> getOrder(int orderId) {
         LOG.debug("/order return the found order for orderId={}", orderId);
 
         if (orderId < 1) throw new InvalidInputException("Invalid orderId: " + orderId);
 
         if (orderId == 13) throw new NotFoundException("No order found for orderId: " + orderId);
 
-        return new Order(orderId, "name-" + orderId);
+        return Mono.just(new Order(orderId, "name-" + orderId));
     }
 }

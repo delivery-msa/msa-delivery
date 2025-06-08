@@ -1,0 +1,6 @@
+server.port: 7005
+
+logging:
+  level:
+    root: INFO
+    com.msa.microservices: DEBUG

@@ -10,6 +10,6 @@ public interface OrderService {
         value = "/order/{orderId}",
         produces = "application/json"
     )
-    Order getOrder(@PathVariable int orderId);
+    Mono<Order> getOrder(@PathVariable int orderId);
 
 }

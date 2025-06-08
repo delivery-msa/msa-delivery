@@ -8,3 +8,18 @@ project(':util').projectDir = file('util')
 
 include ':microservices:order-service'
 project(':microservices:order-service').projectDir = file('microservices/order-service')
+
+include ':microservices:customer-service'
+project(':microservices:customer-service').projectDir = file('microservices/customer-service')
+
+include ':microservices:kitchen-service'
+project(':microservices:kitchen-service').projectDir = file('microservices/kitchen-service')
+
+include ':microservices:restaurant-service'
+project(':microservices:restaurant-service').projectDir = file('microservices/restaurant-service')
+
+include ':microservices:rider-service'
+project(':microservices:rider-service').projectDir = file('microservices/rider-service')
+
+include ':microservices:ticket-service'
+project(':microservices:ticket-service').projectDir = file('microservices/ticket-service')
