@@ -6,6 +6,9 @@ project(':api').projectDir = file('api')
 include ':util'
 project(':util').projectDir = file('util')
 
+include ':common-swagger'
+project(':common-swagger').projectDir = file('common-swagger')
+
 include ':microservices:order-service'
 project(':microservices:order-service').projectDir = file('microservices/order-service')
 
