@@ -40,3 +40,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### 프로젝트 설정 ###
+application.yml
+# **application.yml
+#microservices/customer-service/src/main/resources/
+# microservices/**/src/main/resources/application.yml
