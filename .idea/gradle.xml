@@ -10,7 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/common-swagger" />
+=======
+            <option value="$PROJECT_DIR$/infra" />
+            <option value="$PROJECT_DIR$/infra/config-server" />
+            <option value="$PROJECT_DIR$/infra/eureka-server" />
+            <option value="$PROJECT_DIR$/infra/gateway" />
+>>>>>>> ac1d0c8d0d03dcea4f540ec9f0e45e76feec1957
             <option value="$PROJECT_DIR$/microservices" />
             <option value="$PROJECT_DIR$/microservices/customer-service" />
             <option value="$PROJECT_DIR$/microservices/kitchen-service" />
