@@ -22,7 +22,7 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     public OrderServiceImpl(ServiceUtil serviceUtil) {
         this.serviceUtil = serviceUtil;
-  ;  }
+    }
 
     @Override
     public Mono<Order> getOrder(int orderId) {
